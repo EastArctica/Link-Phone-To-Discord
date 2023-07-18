@@ -1,21 +1,21 @@
-# Discord-Phone-Linking
-Linking your android phone's texts and calls in with discord.
+# Discord-Android-Integration
+Synchronize your Android phone's texts and calls with Discord.
 
-# Support
-Currently this project only support android phones with a valid sms.
-This project sends data to a webhook containing the phone number of the message, and the message content. Support will be added for detecting incoming calls.
+# Compatibility
+This project is currently compatible only with Android phones capable of sending valid SMS messages. It operates by dispatching data to a webhook, detailing both the phone number and the content of the message. The capability to detect incoming calls is a planned addition.
 
-# Future Plans
-Support for IOS devices?
- - It's expensive to put apps on IOS
-Support for Discord Bots insted of webhooks.
-Actually detecting calls and sending it to the server
-# Installation
-**DOESNT WORK SOURCE CODE OF APP NEEDS TO BE EDITED MANUALLY**
- - Install node.js
- - Modify server.js to have your webhook on the line ``const Hook = new webhook.Webhook("WEBHOOK URL HERE")``
- - run ``npm install -g qckwinsvc`` in CMD or Powershell
- - run ``Set-ExecutionPolicy RemoteSigned`` in an administrative CMD or Powershell
- - run ``qckwinsvc --name "DiscordPhoneLinker" --description "Links your phone to Discord" --script "YOUR SERVER LOCATION" --startImmediately`` and setup with the following data
- - YOUR SEVER LOCATION needs to be replaced with the path to where you downloaded the file ex. (C:\Users\East_Arctica\Downloads\Discord-Phone-Linker\Web\server.js) Must be server.js not index.js
- - Your done! thats all you need to do to set it up (might make a video tutorial)
+# Future Developments
+- **iOS Compatibility**: The consideration for extending support to iOS devices is being planned, with the major hindrance being the existance of cost being involved in iOS app deployment.
+
+- **Integration with Discord Bots**: To enhance functionality and flexibility, we are planning to transition from webhook to Discord Bot integrations in future updates.
+
+- **Call Detection and Forwarding**: We are actively working on the functionality to detect incoming calls and transmit this information to the server.
+
+# Server Setup
+ - Install Node.js.
+ - Rename the `config.example.json` file into `config.json` and set the webhook and device name fields.
+ - Run `npm install -g pm2`.
+ - Execute `pm2 start . --name "Discord-Android-Integration"`.
+
+# Mobile Setup
+ - TODO: Add instructions for mobile setup.

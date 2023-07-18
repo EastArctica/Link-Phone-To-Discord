@@ -1,0 +1,23 @@
+{
+  "name": "discord-android-integration",
+  "version": "1.0.0",
+  "description": "Synchronize your Android phone's texts and calls with Discord.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EastArctica/Discord-Android-Integration.git"
+  },
+  "author": "East_Arctica",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EastArctica/Discord-Android-Integration/issues"
+  },
+  "homepage": "https://github.com/EastArctica/Discord-Android-Integration#readme"
+}
